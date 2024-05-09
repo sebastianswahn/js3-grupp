@@ -6,12 +6,13 @@ function EventCard() {
         <div className='flex justify-between mx-14'>
             <div className='flex'>
             <div className='w-1/3'>
-                <img src='https://via.placeholder.com/150' />
+                <div className='bg-slate-500 h-full'>Bilden</div>
             </div>
             <div className='w-2/3'>
-                <div>Event Name</div>
-                <div>Event Date</div>
-                <div>Event Description</div>
+                <div>Rubrik</div>
+                <div>Datum & Tid</div>
+                <div>Beskrivning</div>
+                <div>Plats</div>
             </div>
             </div>
             <div className='underline'>Book this event</div>
