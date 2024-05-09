@@ -1,8 +1,10 @@
+import EventCard from '@/components/navbar/eventcard/eventcard'
+import Navbar from '@/components/navbar/navbar'
 import React from 'react'
 
 function LandingPage() {
   return (
-    <div>LandingPage</div>
+    <div><Navbar /><EventCard /></div>
   )
 }
 
