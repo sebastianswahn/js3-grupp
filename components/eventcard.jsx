@@ -1,6 +1,5 @@
-import React from 'react'
-
 function EventCard() {
+
   return (
     <div className='mt-12 mx-4 rounded-xl bg-slate-800 text-white'>
         <div className='flex justify-between mx-14'>
