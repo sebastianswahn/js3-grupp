@@ -1,7 +1,7 @@
 'use client'
 import EventCard from '@/components/eventcard'
 import Navbar from '@/components/navbar'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { useUser } from '@clerk/nextjs'
 import { getEvents } from '@/lib/getEvents'
 import { collection } from 'firebase/firestore'
@@ -12,7 +12,8 @@ function LandingPage() {
 
   const { isSignedIn } = useUser()
 
-  const collectionRef = collection(db, 'events');
+  // USE MEMO TO PREVENT LOOP FOR SOME REASON 
+  const collectionRef = useMemo(() => collection(db, 'events'), []);
 
   const [ events, setEvents ] = useState([])
 
